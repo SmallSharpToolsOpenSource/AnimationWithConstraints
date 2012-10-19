@@ -65,6 +65,11 @@
                                     <segue destination="Ycd-Pb-Hat" kind="push" identifier="HomeToSubview" id="2qr-bs-re1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="tap the segmented control to animate the boxes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ka5-af-YFb">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -72,6 +77,7 @@
                             <constraint firstItem="aqP-4k-Pdm" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="0Mq-Pt-ao0"/>
                             <constraint firstItem="aqP-4k-Pdm" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="123" id="2GM-ek-bAS"/>
                             <constraint firstItem="WiA-jW-y13" firstAttribute="leading" secondItem="aqP-4k-Pdm" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="2I2-Gh-JCX"/>
+                            <constraint firstItem="ka5-af-YFb" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2hh-D0-RE9"/>
                             <constraint firstItem="vFt-SF-1o4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="40" id="5nO-tI-SM7"/>
                             <constraint firstItem="A7w-3S-ezg" firstAttribute="top" secondItem="TSb-k2-9Qo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="6ym-bb-7ft"/>
                             <constraint firstAttribute="bottom" secondItem="A7w-3S-ezg" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="866-f0-2qz"/>
@@ -81,11 +87,13 @@
                             <constraint firstAttribute="trailing" secondItem="WiA-jW-y13" secondAttribute="trailing" constant="39" id="QvF-G0-ZiE"/>
                             <constraint firstAttribute="trailing" secondItem="TSb-k2-9Qo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SYL-jI-qax"/>
                             <constraint firstItem="aqP-4k-Pdm" firstAttribute="leading" secondItem="vFt-SF-1o4" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="VPD-jH-rZw"/>
-                            <constraint firstItem="TSb-k2-9Qo" firstAttribute="centerX" secondItem="aqP-4k-Pdm" secondAttribute="centerX" type="default" id="W0G-kZ-b0q"/>
                             <constraint firstItem="WiA-jW-y13" firstAttribute="bottom" secondItem="aqP-4k-Pdm" secondAttribute="bottom" type="default" id="YUt-mh-MlP"/>
                             <constraint firstItem="WiA-jW-y13" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="YoL-5T-KiJ"/>
                             <constraint firstAttribute="trailing" secondItem="A7w-3S-ezg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hIG-2m-2bE"/>
                             <constraint firstItem="aqP-4k-Pdm" firstAttribute="bottom" secondItem="vFt-SF-1o4" secondAttribute="bottom" type="default" id="iTd-Zp-ZgB"/>
+                            <constraint firstItem="aqP-4k-Pdm" firstAttribute="centerX" secondItem="ka5-af-YFb" secondAttribute="centerX" type="default" id="jgw-f8-xnd"/>
+                            <constraint firstItem="TSb-k2-9Qo" firstAttribute="top" secondItem="ka5-af-YFb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oJJ-q4-6zG"/>
+                            <constraint firstAttribute="trailing" secondItem="ka5-af-YFb" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sIx-5Z-gYA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Animations with Constraints" id="rjC-Co-Cdt">
@@ -101,6 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="119" y="-70"/>
         </scene>
         <!--View Controller - Subview-->
         <scene sceneID="qLB-up-j6B">
@@ -127,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OrD-hO-Cpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="93"/>
+            <point key="canvasLocation" x="576" y="-70"/>
         </scene>
     </scenes>
     <classes>
