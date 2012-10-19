@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qX9-NG-kkS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QAL-6c-cUd">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="qX9-NG-kkS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pm5-m3-7ye">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="I7L-iz-Qyz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqi-k7-0Db" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-329" y="-70"/>
+        </scene>
+        <!--View Controller - Animations with Constraints-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="DTViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFt-SF-1o4">
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqP-4k-Pdm">
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiA-jW-y13">
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TSb-k2-9Qo">
+                                <segments>
+                                    <segment title="One"/>
+                                    <segment title="Two"/>
+                                    <segment title="Three"/>
+                                </segments>
+                                <color key="tintColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="2" eventType="valueChanged" id="qpT-uh-84w"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7w-3S-ezg">
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xfs-qo-ozZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ycd-Pb-Hat" kind="push" identifier="HomeToSubview" id="2qr-bs-re1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A7w-3S-ezg" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="02H-YD-pcg"/>
+                            <constraint firstItem="aqP-4k-Pdm" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="0Mq-Pt-ao0"/>
+                            <constraint firstItem="aqP-4k-Pdm" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="123" id="2GM-ek-bAS"/>
+                            <constraint firstItem="WiA-jW-y13" firstAttribute="leading" secondItem="aqP-4k-Pdm" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="2I2-Gh-JCX"/>
+                            <constraint firstItem="vFt-SF-1o4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="40" id="5nO-tI-SM7"/>
+                            <constraint firstItem="A7w-3S-ezg" firstAttribute="top" secondItem="TSb-k2-9Qo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="6ym-bb-7ft"/>
+                            <constraint firstAttribute="bottom" secondItem="A7w-3S-ezg" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="866-f0-2qz"/>
+                            <constraint firstItem="vFt-SF-1o4" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="A6e-QL-R5Q"/>
+                            <constraint firstItem="TSb-k2-9Qo" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Fal-LX-c0D"/>
+                            <constraint firstAttribute="bottom" secondItem="vFt-SF-1o4" secondAttribute="bottom" constant="409" id="O6P-MA-Yz8"/>
+                            <constraint firstAttribute="trailing" secondItem="WiA-jW-y13" secondAttribute="trailing" constant="39" id="QvF-G0-ZiE"/>
+                            <constraint firstAttribute="trailing" secondItem="TSb-k2-9Qo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SYL-jI-qax"/>
+                            <constraint firstItem="aqP-4k-Pdm" firstAttribute="leading" secondItem="vFt-SF-1o4" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="VPD-jH-rZw"/>
+                            <constraint firstItem="TSb-k2-9Qo" firstAttribute="centerX" secondItem="aqP-4k-Pdm" secondAttribute="centerX" type="default" id="W0G-kZ-b0q"/>
+                            <constraint firstItem="WiA-jW-y13" firstAttribute="bottom" secondItem="aqP-4k-Pdm" secondAttribute="bottom" type="default" id="YUt-mh-MlP"/>
+                            <constraint firstItem="WiA-jW-y13" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="YoL-5T-KiJ"/>
+                            <constraint firstAttribute="trailing" secondItem="A7w-3S-ezg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hIG-2m-2bE"/>
+                            <constraint firstItem="aqP-4k-Pdm" firstAttribute="bottom" secondItem="vFt-SF-1o4" secondAttribute="bottom" type="default" id="iTd-Zp-ZgB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animations with Constraints" id="rjC-Co-Cdt">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="osh-CX-Rl3"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="box1" destination="vFt-SF-1o4" id="TUU-yw-VH6"/>
+                        <outlet property="box2" destination="aqP-4k-Pdm" id="UM8-Rj-kuy"/>
+                        <outlet property="box3" destination="WiA-jW-y13" id="3bR-Im-2YY"/>
+                        <outlet property="pushButton" destination="A7w-3S-ezg" id="aDm-cO-nFp"/>
+                        <outlet property="segmentedControl" destination="TSb-k2-9Qo" id="q6O-PZ-XwJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller - Subview-->
+        <scene sceneID="qLB-up-j6B">
+            <objects>
+                <viewController id="Ycd-Pb-Hat" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0BG-96-1aL">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Does returning home keep the boxes in the same position or do constraints reset them?" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="O6g-kd-5ql">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O6g-kd-5ql" firstAttribute="top" secondItem="0BG-96-1aL" secondAttribute="top" constant="20" symbolic="YES" type="default" id="YKl-6i-xig"/>
+                            <constraint firstAttribute="trailing" secondItem="O6g-kd-5ql" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="dHs-ZR-4Bx"/>
+                            <constraint firstItem="O6g-kd-5ql" firstAttribute="leading" secondItem="0BG-96-1aL" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mav-6q-Wz0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Subview" id="1Rh-hf-6lV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OrD-hO-Cpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="93"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="DTViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DTViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="segmentValueChanged:"/>
+                <relationship kind="outlet" name="box1" candidateClass="UIView"/>
+                <relationship kind="outlet" name="box2" candidateClass="UIView"/>
+                <relationship kind="outlet" name="box3" candidateClass="UIView"/>
+                <relationship kind="outlet" name="pushButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="segmentedControl" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
