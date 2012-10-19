@@ -27,6 +27,7 @@
 		26D345411631C7D6004E8B73 /* GreenButton-Dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D3453D1631C7D6004E8B73 /* GreenButton-Dark@2x.png */; };
 		26D345421631C7D6004E8B73 /* GreenButton-Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D3453E1631C7D6004E8B73 /* GreenButton-Light.png */; };
 		26D345431631C7D6004E8B73 /* GreenButton-Light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D3453F1631C7D6004E8B73 /* GreenButton-Light@2x.png */; };
+		26D345491631D218004E8B73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26D345481631D218004E8B73 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		26D3453D1631C7D6004E8B73 /* GreenButton-Dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GreenButton-Dark@2x.png"; path = "AnimationWithConstraints/GreenButton-Dark@2x.png"; sourceTree = "<group>"; };
 		26D3453E1631C7D6004E8B73 /* GreenButton-Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GreenButton-Light.png"; path = "AnimationWithConstraints/GreenButton-Light.png"; sourceTree = "<group>"; };
 		26D3453F1631C7D6004E8B73 /* GreenButton-Light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GreenButton-Light@2x.png"; path = "AnimationWithConstraints/GreenButton-Light@2x.png"; sourceTree = "<group>"; };
+		26D345481631D218004E8B73 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		26D345071631B86A004E8B73 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26D345481631D218004E8B73 /* README.md */,
 				26D345081631B86A004E8B73 /* AnimationWithConstraints-Info.plist */,
 				26D345091631B86A004E8B73 /* InfoPlist.strings */,
 				26D3450C1631B86A004E8B73 /* main.m */,
@@ -261,6 +264,7 @@
 				26D345411631C7D6004E8B73 /* GreenButton-Dark@2x.png in Resources */,
 				26D345421631C7D6004E8B73 /* GreenButton-Light.png in Resources */,
 				26D345431631C7D6004E8B73 /* GreenButton-Light@2x.png in Resources */,
+				26D345491631D218004E8B73 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +476,7 @@
 				26D345371631B86A004E8B73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26D345381631B86A004E8B73 /* Build configuration list for PBXNativeTarget "AnimationWithConstraintsTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +485,7 @@
 				26D3453A1631B86A004E8B73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
