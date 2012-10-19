@@ -8,12 +8,17 @@
 
 #import "DTViewController.h"
 
-@interface DTViewController ()
+#define kUseConstraintsAnimation TRUE
 
+@interface DTViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *box1;
 @property (weak, nonatomic) IBOutlet UIView *box2;
 @property (weak, nonatomic) IBOutlet UIView *box3;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *box1TopConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *box2TopConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *box3TopConstraint;
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet UIButton *pushButton;
@@ -61,13 +66,28 @@
         DebugLog(@"Value Changed: %i", self.segmentedControl.selectedSegmentIndex);
         
         if (self.segmentedControl.selectedSegmentIndex == 0) {
-            [self toggleBoxAnimation:self.box1 originY:box1OriginY];
+            if (kUseConstraintsAnimation) {
+                [self toggleBoxAnimation:self.box1 topConstraint:self.box1TopConstraint];
+            }
+            else {
+                [self toggleBoxAnimation:self.box1 originY:box1OriginY];
+            }
         }
         else if (self.segmentedControl.selectedSegmentIndex == 1) {
-            [self toggleBoxAnimation:self.box2 originY:box2OriginY];
+            if (kUseConstraintsAnimation) {
+                [self toggleBoxAnimation:self.box2 topConstraint:self.box2TopConstraint];
+            }
+            else {
+                [self toggleBoxAnimation:self.box2 originY:box2OriginY];
+            }
         }
         else if (self.segmentedControl.selectedSegmentIndex == 2) {
-            [self toggleBoxAnimation:self.box3 originY:box3OriginY];
+            if (kUseConstraintsAnimation) {
+                [self toggleBoxAnimation:self.box3 topConstraint:self.box3TopConstraint];
+            }
+            else {
+                [self toggleBoxAnimation:self.box3 originY:box3OriginY];
+            }
         }
     }
 }
@@ -84,6 +104,24 @@
     UIViewAnimationOptions options = UIViewAnimationOptionAllowUserInteraction;
     [UIView animateWithDuration:0.5 delay:0.0 options:options animations:^{
         box.frame = frame;
+    } completion:^(BOOL finished) {
+    }];
+}
+
+
+- (void)toggleBoxAnimation:(UIView *)box topConstraint:(NSLayoutConstraint *)topConstraint {
+    
+    UIViewAnimationOptions options = UIViewAnimationOptionAllowUserInteraction;
+    [UIView animateWithDuration:0.5 delay:0.0 options:options animations:^{
+        if (topConstraint.constant == 20.0) {
+            topConstraint.constant = 100.0;
+        }
+        else {
+            topConstraint.constant = 20.0;
+        }
+
+        [box.superview setNeedsLayout];
+        [box.superview layoutIfNeeded];
     } completion:^(BOOL finished) {
     }];
 }

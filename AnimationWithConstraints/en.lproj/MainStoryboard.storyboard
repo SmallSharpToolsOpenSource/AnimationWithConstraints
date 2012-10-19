@@ -24,18 +24,30 @@
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="DTViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="HomeView" id="3">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFt-SF-1o4">
+                            <view contentMode="scaleToFill" restorationIdentifier="Box1" translatesAutoresizingMaskIntoConstraints="NO" id="38s-Ur-yz9" userLabel="Box 1">
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" type="user" id="crf-VU-lcx"/>
+                                    <constraint firstAttribute="width" constant="75" type="user" id="t8J-lj-Km4"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqP-4k-Pdm">
+                            <view contentMode="scaleToFill" restorationIdentifier="Box2" translatesAutoresizingMaskIntoConstraints="NO" id="gVM-cu-iMb" userLabel="Box 2">
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" type="user" id="99M-Lv-Uzc"/>
+                                    <constraint firstAttribute="width" constant="75" type="user" id="yT8-YT-pVH"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiA-jW-y13">
+                            <view contentMode="scaleToFill" restorationIdentifier="Box3" translatesAutoresizingMaskIntoConstraints="NO" id="MBy-ed-Ksg" userLabel="Box 3">
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" type="user" id="eij-mu-Y2F"/>
+                                    <constraint firstAttribute="width" constant="75" type="user" id="zGc-Bg-xdj"/>
+                                </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TSb-k2-9Qo">
                                 <segments>
@@ -74,35 +86,32 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A7w-3S-ezg" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="02H-YD-pcg"/>
-                            <constraint firstItem="aqP-4k-Pdm" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="0Mq-Pt-ao0"/>
-                            <constraint firstItem="aqP-4k-Pdm" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="123" id="2GM-ek-bAS"/>
-                            <constraint firstItem="WiA-jW-y13" firstAttribute="leading" secondItem="aqP-4k-Pdm" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="2I2-Gh-JCX"/>
-                            <constraint firstItem="ka5-af-YFb" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2hh-D0-RE9"/>
-                            <constraint firstItem="vFt-SF-1o4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="40" id="5nO-tI-SM7"/>
+                            <constraint firstItem="ka5-af-YFb" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="2hh-D0-RE9"/>
+                            <constraint firstItem="38s-Ur-yz9" firstAttribute="leading" secondItem="3" secondAttribute="leading" priority="250" constant="20" symbolic="YES" type="user" id="33y-LG-PUI"/>
                             <constraint firstItem="A7w-3S-ezg" firstAttribute="top" secondItem="TSb-k2-9Qo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="6ym-bb-7ft"/>
                             <constraint firstAttribute="bottom" secondItem="A7w-3S-ezg" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="866-f0-2qz"/>
-                            <constraint firstItem="vFt-SF-1o4" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="A6e-QL-R5Q"/>
                             <constraint firstItem="TSb-k2-9Qo" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Fal-LX-c0D"/>
-                            <constraint firstAttribute="bottom" secondItem="vFt-SF-1o4" secondAttribute="bottom" constant="409" id="O6P-MA-Yz8"/>
-                            <constraint firstAttribute="trailing" secondItem="WiA-jW-y13" secondAttribute="trailing" constant="39" id="QvF-G0-ZiE"/>
                             <constraint firstAttribute="trailing" secondItem="TSb-k2-9Qo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SYL-jI-qax"/>
-                            <constraint firstItem="aqP-4k-Pdm" firstAttribute="leading" secondItem="vFt-SF-1o4" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="VPD-jH-rZw"/>
-                            <constraint firstItem="WiA-jW-y13" firstAttribute="bottom" secondItem="aqP-4k-Pdm" secondAttribute="bottom" type="default" id="YUt-mh-MlP"/>
-                            <constraint firstItem="WiA-jW-y13" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="YoL-5T-KiJ"/>
+                            <constraint firstItem="gVM-cu-iMb" firstAttribute="centerX" secondItem="ka5-af-YFb" secondAttribute="centerX" priority="250" type="user" id="ZWv-YT-U9e"/>
+                            <constraint firstItem="gVM-cu-iMb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="user" id="cg0-Mq-y9h"/>
                             <constraint firstAttribute="trailing" secondItem="A7w-3S-ezg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hIG-2m-2bE"/>
-                            <constraint firstItem="aqP-4k-Pdm" firstAttribute="bottom" secondItem="vFt-SF-1o4" secondAttribute="bottom" type="default" id="iTd-Zp-ZgB"/>
-                            <constraint firstItem="aqP-4k-Pdm" firstAttribute="centerX" secondItem="ka5-af-YFb" secondAttribute="centerX" type="default" id="jgw-f8-xnd"/>
+                            <constraint firstAttribute="trailing" secondItem="MBy-ed-Ksg" secondAttribute="trailing" priority="250" constant="20" symbolic="YES" type="user" id="iJZ-Un-lVD"/>
+                            <constraint firstItem="MBy-ed-Ksg" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="user" id="lnU-Xx-T3x"/>
                             <constraint firstItem="TSb-k2-9Qo" firstAttribute="top" secondItem="ka5-af-YFb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oJJ-q4-6zG"/>
-                            <constraint firstAttribute="trailing" secondItem="ka5-af-YFb" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sIx-5Z-gYA"/>
+                            <constraint firstAttribute="trailing" secondItem="ka5-af-YFb" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="sIx-5Z-gYA"/>
+                            <constraint firstItem="38s-Ur-yz9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="user" id="xuN-EA-kl6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Animations with Constraints" id="rjC-Co-Cdt">
                         <barButtonItem key="backBarButtonItem" title="Home" id="osh-CX-Rl3"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="box1" destination="vFt-SF-1o4" id="TUU-yw-VH6"/>
-                        <outlet property="box2" destination="aqP-4k-Pdm" id="UM8-Rj-kuy"/>
-                        <outlet property="box3" destination="WiA-jW-y13" id="3bR-Im-2YY"/>
+                        <outlet property="box1" destination="38s-Ur-yz9" id="WVq-HQ-E1x"/>
+                        <outlet property="box1TopConstraint" destination="xuN-EA-kl6" id="qPR-Fm-crP"/>
+                        <outlet property="box2" destination="gVM-cu-iMb" id="2nu-ox-uwQ"/>
+                        <outlet property="box2TopConstraint" destination="cg0-Mq-y9h" id="yII-K7-2ww"/>
+                        <outlet property="box3" destination="MBy-ed-Ksg" id="yia-Yh-8Ii"/>
+                        <outlet property="box3TopConstraint" destination="lnU-Xx-T3x" id="163-uu-gTk"/>
                         <outlet property="pushButton" destination="A7w-3S-ezg" id="aDm-cO-nFp"/>
                         <outlet property="segmentedControl" destination="TSb-k2-9Qo" id="q6O-PZ-XwJ"/>
                     </connections>
@@ -145,8 +154,11 @@
             <relationships>
                 <relationship kind="action" name="segmentValueChanged:"/>
                 <relationship kind="outlet" name="box1" candidateClass="UIView"/>
+                <relationship kind="outlet" name="box1TopConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="box2" candidateClass="UIView"/>
+                <relationship kind="outlet" name="box2TopConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="box3" candidateClass="UIView"/>
+                <relationship kind="outlet" name="box3TopConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="pushButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="segmentedControl" candidateClass="UISegmentedControl"/>
             </relationships>
