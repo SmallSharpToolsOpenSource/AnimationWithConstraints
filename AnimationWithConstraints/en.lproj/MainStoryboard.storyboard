@@ -24,25 +24,25 @@
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="DTViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="HomeView" id="3">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="" id="3">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" restorationIdentifier="Box1" translatesAutoresizingMaskIntoConstraints="NO" id="38s-Ur-yz9" userLabel="Box 1">
+                            <view contentMode="scaleToFill" restorationIdentifier="" translatesAutoresizingMaskIntoConstraints="NO" id="38s-Ur-yz9" userLabel="Box 1">
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" type="user" id="crf-VU-lcx"/>
                                     <constraint firstAttribute="width" constant="75" type="user" id="t8J-lj-Km4"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" restorationIdentifier="Box2" translatesAutoresizingMaskIntoConstraints="NO" id="gVM-cu-iMb" userLabel="Box 2">
+                            <view contentMode="scaleToFill" restorationIdentifier="" translatesAutoresizingMaskIntoConstraints="NO" id="gVM-cu-iMb" userLabel="Box 2">
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" type="user" id="99M-Lv-Uzc"/>
                                     <constraint firstAttribute="width" constant="75" type="user" id="yT8-YT-pVH"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" restorationIdentifier="Box3" translatesAutoresizingMaskIntoConstraints="NO" id="MBy-ed-Ksg" userLabel="Box 3">
+                            <view contentMode="scaleToFill" restorationIdentifier="" translatesAutoresizingMaskIntoConstraints="NO" id="MBy-ed-Ksg" userLabel="Box 3">
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" type="user" id="eij-mu-Y2F"/>

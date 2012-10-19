@@ -108,7 +108,6 @@
     }];
 }
 
-
 - (void)toggleBoxAnimation:(UIView *)box topConstraint:(NSLayoutConstraint *)topConstraint {
     
     UIViewAnimationOptions options = UIViewAnimationOptionAllowUserInteraction;
@@ -125,6 +124,5 @@
     } completion:^(BOOL finished) {
     }];
 }
-
 
 @end
