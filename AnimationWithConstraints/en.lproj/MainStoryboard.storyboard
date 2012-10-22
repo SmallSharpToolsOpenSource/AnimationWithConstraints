@@ -49,17 +49,6 @@
                                     <constraint firstAttribute="width" constant="75" type="user" id="zGc-Bg-xdj"/>
                                 </constraints>
                             </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TSb-k2-9Qo">
-                                <segments>
-                                    <segment title="One"/>
-                                    <segment title="Two"/>
-                                    <segment title="Three"/>
-                                </segments>
-                                <color key="tintColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="segmentValueChanged:" destination="2" eventType="valueChanged" id="qpT-uh-84w"/>
-                                </connections>
-                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7w-3S-ezg">
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -82,22 +71,79 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8g-zq-8WR">
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="lBp-u8-v6d"/>
+                                    <constraint firstAttribute="width" constant="90" id="qep-Gm-skU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="One">
+                                    <color key="titleColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button1Tapped:" destination="2" eventType="touchUpInside" id="EX5-gP-Awu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBk-Ql-2qz">
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="8st-Z1-e8O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Two">
+                                    <color key="titleColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button2Tapped:" destination="2" eventType="touchUpInside" id="pK0-Ed-isW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pu6-SA-TiI">
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="ZHe-gl-8bZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Three">
+                                    <color key="titleColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button3Tapped:" destination="2" eventType="touchUpInside" id="4jz-Vi-jeB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A7w-3S-ezg" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="02H-YD-pcg"/>
                             <constraint firstItem="ka5-af-YFb" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="2hh-D0-RE9"/>
                             <constraint firstItem="38s-Ur-yz9" firstAttribute="leading" secondItem="3" secondAttribute="leading" priority="250" constant="20" symbolic="YES" type="user" id="33y-LG-PUI"/>
-                            <constraint firstItem="A7w-3S-ezg" firstAttribute="top" secondItem="TSb-k2-9Qo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="6ym-bb-7ft"/>
+                            <constraint firstItem="C8g-zq-8WR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3Di-s6-1Wv"/>
                             <constraint firstAttribute="bottom" secondItem="A7w-3S-ezg" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="866-f0-2qz"/>
-                            <constraint firstItem="TSb-k2-9Qo" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Fal-LX-c0D"/>
-                            <constraint firstAttribute="trailing" secondItem="TSb-k2-9Qo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SYL-jI-qax"/>
+                            <constraint firstItem="RBk-Ql-2qz" firstAttribute="top" secondItem="ka5-af-YFb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="FhU-ES-KEB"/>
+                            <constraint firstItem="A7w-3S-ezg" firstAttribute="top" secondItem="RBk-Ql-2qz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QR6-dN-vV2"/>
+                            <constraint firstItem="RBk-Ql-2qz" firstAttribute="centerX" secondItem="ka5-af-YFb" secondAttribute="centerX" type="default" id="URT-Fy-yzj"/>
+                            <constraint firstItem="A7w-3S-ezg" firstAttribute="top" secondItem="Pu6-SA-TiI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UtH-3f-FwG"/>
+                            <constraint firstAttribute="trailing" secondItem="Pu6-SA-TiI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Yun-Mh-2Ze"/>
                             <constraint firstItem="gVM-cu-iMb" firstAttribute="centerX" secondItem="ka5-af-YFb" secondAttribute="centerX" priority="250" type="user" id="ZWv-YT-U9e"/>
                             <constraint firstItem="gVM-cu-iMb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="user" id="cg0-Mq-y9h"/>
                             <constraint firstAttribute="trailing" secondItem="A7w-3S-ezg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hIG-2m-2bE"/>
                             <constraint firstAttribute="trailing" secondItem="MBy-ed-Ksg" secondAttribute="trailing" priority="250" constant="20" symbolic="YES" type="user" id="iJZ-Un-lVD"/>
+                            <constraint firstItem="Pu6-SA-TiI" firstAttribute="top" secondItem="ka5-af-YFb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="iqe-L4-XYe"/>
+                            <constraint firstItem="C8g-zq-8WR" firstAttribute="top" secondItem="ka5-af-YFb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="job-3N-eOz"/>
                             <constraint firstItem="MBy-ed-Ksg" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="user" id="lnU-Xx-T3x"/>
-                            <constraint firstItem="TSb-k2-9Qo" firstAttribute="top" secondItem="ka5-af-YFb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oJJ-q4-6zG"/>
+                            <constraint firstItem="A7w-3S-ezg" firstAttribute="top" secondItem="C8g-zq-8WR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nfR-pO-1la"/>
                             <constraint firstAttribute="trailing" secondItem="ka5-af-YFb" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="sIx-5Z-gYA"/>
                             <constraint firstItem="38s-Ur-yz9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="user" id="xuN-EA-kl6"/>
                         </constraints>
@@ -112,13 +158,16 @@
                         <outlet property="box2TopConstraint" destination="cg0-Mq-y9h" id="yII-K7-2ww"/>
                         <outlet property="box3" destination="MBy-ed-Ksg" id="yia-Yh-8Ii"/>
                         <outlet property="box3TopConstraint" destination="lnU-Xx-T3x" id="163-uu-gTk"/>
+                        <outlet property="button1" destination="C8g-zq-8WR" id="fzi-xY-QXX"/>
+                        <outlet property="button2" destination="RBk-Ql-2qz" id="9jG-Nd-mOr"/>
+                        <outlet property="button3" destination="Pu6-SA-TiI" id="lEr-2K-hPs"/>
+                        <outlet property="instructionsLabel" destination="ka5-af-YFb" id="yT4-JU-Daw"/>
                         <outlet property="pushButton" destination="A7w-3S-ezg" id="aDm-cO-nFp"/>
-                        <outlet property="segmentedControl" destination="TSb-k2-9Qo" id="q6O-PZ-XwJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="119" y="-70"/>
+            <point key="canvasLocation" x="125" y="-70"/>
         </scene>
         <!--View Controller - Subview-->
         <scene sceneID="qLB-up-j6B">
@@ -152,15 +201,20 @@
         <class className="DTViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DTViewController.h"/>
             <relationships>
-                <relationship kind="action" name="segmentValueChanged:"/>
+                <relationship kind="action" name="button1Tapped:"/>
+                <relationship kind="action" name="button2Tapped:"/>
+                <relationship kind="action" name="button3Tapped:"/>
                 <relationship kind="outlet" name="box1" candidateClass="UIView"/>
                 <relationship kind="outlet" name="box1TopConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="box2" candidateClass="UIView"/>
                 <relationship kind="outlet" name="box2TopConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="box3" candidateClass="UIView"/>
                 <relationship kind="outlet" name="box3TopConstraint" candidateClass="NSLayoutConstraint"/>
+                <relationship kind="outlet" name="button1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="button3" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="instructionsLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pushButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="segmentedControl" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

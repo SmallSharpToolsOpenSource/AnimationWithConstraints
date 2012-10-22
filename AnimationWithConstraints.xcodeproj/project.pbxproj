@@ -28,6 +28,8 @@
 		26D345421631C7D6004E8B73 /* GreenButton-Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D3453E1631C7D6004E8B73 /* GreenButton-Light.png */; };
 		26D345431631C7D6004E8B73 /* GreenButton-Light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D3453F1631C7D6004E8B73 /* GreenButton-Light@2x.png */; };
 		26D345491631D218004E8B73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26D345481631D218004E8B73 /* README.md */; };
+		26D345501635D0A4004E8B73 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D3454F1635D0A3004E8B73 /* Icon.png */; };
+		26D345521635D0AB004E8B73 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D345511635D0AB004E8B73 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		26D3453E1631C7D6004E8B73 /* GreenButton-Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GreenButton-Light.png"; path = "AnimationWithConstraints/GreenButton-Light.png"; sourceTree = "<group>"; };
 		26D3453F1631C7D6004E8B73 /* GreenButton-Light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GreenButton-Light@2x.png"; path = "AnimationWithConstraints/GreenButton-Light@2x.png"; sourceTree = "<group>"; };
 		26D345481631D218004E8B73 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		26D3454F1635D0A3004E8B73 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		26D345511635D0AB004E8B73 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 				26D345091631B86A004E8B73 /* InfoPlist.strings */,
 				26D3450C1631B86A004E8B73 /* main.m */,
 				26D3450E1631B86A004E8B73 /* AnimationWithConstraints-Prefix.pch */,
+				26D3454F1635D0A3004E8B73 /* Icon.png */,
+				26D345511635D0AB004E8B73 /* Icon@2x.png */,
 				26D345121631B86A004E8B73 /* Default.png */,
 				26D345141631B86A004E8B73 /* Default@2x.png */,
 				26D345161631B86A004E8B73 /* Default-568h@2x.png */,
@@ -265,6 +271,8 @@
 				26D345421631C7D6004E8B73 /* GreenButton-Light.png in Resources */,
 				26D345431631C7D6004E8B73 /* GreenButton-Light@2x.png in Resources */,
 				26D345491631D218004E8B73 /* README.md in Resources */,
+				26D345501635D0A4004E8B73 /* Icon.png in Resources */,
+				26D345521635D0AB004E8B73 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
