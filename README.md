@@ -13,5 +13,11 @@ The goal with this sample project is to learn how to do animations and keep the 
 and returning to the view. I could either adjust the constraints and trigger an animation to adjust the
 positions of the views or somehow prevent the layout system from undoing the changes by the animation.
 
+The Fix
+=======
+
+To get the animation to work and stay put after leaving and returning to the view I have updated the
+code to adjust the top constraint to change the constant between 20 and 100.
+
 --
 Brennan Stehling - @smallsharptools - 10/2012
